@@ -1,0 +1,9 @@
+environment:
+python3  
+pip/conda install tqdm
+
+I traversed the whole list of rockyou.
+Then hashed it with salt, compared it with known hash code.
+Then I got the password:"adminpassword"
+I also use tqdm library to show process of cracking.
+

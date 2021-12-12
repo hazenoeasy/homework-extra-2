@@ -1,0 +1,11 @@
+step1: cross csrf
+  request "get: http://127.0.0.1:8000/login.html" get the csrf_token;
+step2: creat request
+  "post: http://127.0.0.1:8000/login.html" set cookie, set pword and uname, set csrdtoken.
+step3: check response
+    check response.text.find("Login Failed") or check response.status == 302 
+try every answer in the rockyou.txt
+
+Solution: 
+  Forbid Ddos
+  add verification code in login.html 
